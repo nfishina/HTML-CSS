@@ -7,63 +7,219 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>The Brand</title>
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link
-        href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,900;1,300;1,900&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <div class="header">
-        <div class="container">
-            <div class="header__top">
-                <div class="header__left">
-                    <div class="logo">
-                        <a class="logo__link" href="index.html"><img src="img/logo.png" alt="logo">
-                            <div class="logo__text">BRAN<span class="logo__d">D</span></div>
-                        </a>
-                    </div>
-                    <div class="header__search">
-                        <details class="header__browse">
-                            <summary class="header__browse__text">Browse</summary>
-                        </details>
-                        <form action="#" class="header__form">
-                            <textarea class="header__form__text" name="search" placeholder=" Search for Item..." id=""
-                                cols="30" rows="1"></textarea>
-                            <button class="header__form__button" type="submit"></button>
-                        </form>
-                    </div>
-                </div>
-                <div class="header__right">
-                    <a href="#" class=""><img src="img/basket.svg" alt="shop"></a>
-                    <details class="header__account">
-                        <summary class="header__account__text">My Account</summary>
+    <header class="header">
+        <div class="container header__flex">
+            <div class="header__left">
+                <a class="logo__link" href="index.html"><img src="img/logo.png" alt="logo">
+                    <h2 class="logo__text">BRAN<span class="logo__d">D</span></h2>
+                </a>
+                <form action="#" class="header__form">
+                    <details class="header__browse">
+                        <summary class="header__browse__text">Browse</summary>
                     </details>
-                </div>
+                    <input type="text" class="header__form__text">
+                    <button class="header__form__button" type="submit">o</button>
+                </form>
+            </div>
+            <div class="header__right">
+                <a href="#"><img src="img/basket.svg" alt="shop"></a>
+                <details class="header__account">
+                    <summary class="header__account__text">My Account</summary>
+                </details>
             </div>
         </div>
-        <hr class="header__line">
+    </header>
+    <nav class="navigation">
         <div class="container">
-            <div class="header__menu">
-                <a class="menu__link" href="#">Home</a>
-                <a class="menu__link" href="#">Man</a>
-                <a class="menu__link" href="#">Woman</a>
-                <a class="menu__link" href="#">Kids</a>
-                <a class="menu__link" href="#">Accoseriese</a>
-                <a class="menu__link" href="#">Featured</a>
-                <a class="menu__link" href="#">Hot Deals</a>
-            </div>
+            <ul class="menu">
+                <li><a class="menu-link" href="#">Home</a></li>
+                <li><a class="menu-link" href="#">Man</a></li>
+                <li><a class="menu-link" href="#">Woman</a></li>
+                <li><a class="menu-link" href="#">Kids</a></li>
+                <li><a class="menu-link" href="#">Accoseriese</a></li>
+                <li><a class="menu-link" href="#">Featured</a></li>
+                <li><a class="menu-link" href="#">Hot Deals</a></li>
+            </ul>
         </div>
-    </div>
+    </nav>
     <div class="slider">
         <div class="container slider__box">
-            <div class="slider__border"></div>
             <div class="slider__text">
-                <h1 class="slider__top__header">THE BRAND</h1>
-                <h2 class="slider__header">OF LUXERIOUS <span class="pink__text">FASHION</span></h2>
+                <span class="slider__border"></span>
+                <div class="slider-text-box">
+                    <h1 class="slider__top__header">THE BRAND</h1>
+                    <h2 class="slider__header">OF LUXERIOUS <span class="pink__text">FASHION</span></h2>
+                </div>
             </div>
         </div>
     </div>
+    <section class="category container">
+        <div class="category-left">
+            <a href="#" class="category-for-man category-item">
+                <div class="category-text">
+                    <div class="category-text-top">Hot deal</div>
+                    <div class="category-text-bottom">For man</div>
+                </div>
+            </a>
+            <a href="#" class="category-accessories category-item">
+                <div class="category-text">
+                    <div class="category-text-top">LUXIROUS & trendy</div>
+                    <div class="category-text-bottom">ACCESORIES</div>
+                </div>
+            </a>
+        </div>
+        <div class="category-right">
+            <a href="#" class="category-woman category-item">
+                <div class="category-text">
+                    <div class="category-text-top">30% offer</div>
+                    <div class="category-text-bottom">women</div>
+                </div>
+            </a>
+            <a href="#" class="category-for-kids category-item">
+                <div class="category-text">
+                    <div class="category-text-top">new arrivals</div>
+                    <div class="category-text-bottom">FOR kids</div>
+                </div>
+            </a>
+        </div>
+    </section>
+    <section class="item-sec">
+        <div class="container">
+            <h3 class="item-sec-heading">Fetured Items</h3>
+            <p class="item-sec-txt">Shop for items based on what we featured in this week</p>
+            <div class="item-box">
+                <div class="item">
+                    <a href="#" class="item-link">
+                        <img class="item-pic" src="img/product-1.png" alt="">
+                        <div class="txt-box">
+                            <p class="txt-desc">Mango People T-shirt</p>
+                            <p class="txt-price">$52.00</p>
+                        </div>
+                    </a>
+                    <div class="add-box">
+                        <a href="#" class="add">
+                            <img src="img/card-add.svg" alt="">
+                            <p class="add-txt">Add to Cart</p>
+                        </a>
+                    </div>
+                </div>
+                <div class="item">
+                    <a href="#" class="item-link">
+                        <img class="item-pic" src="img/product-2.png" alt="">
+                        <div class="txt-box">
+                            <p class="txt-desc">Mango People T-shirt</p>
+                            <p class="txt-price">$52.00</p>
+                        </div>
+                    </a>
+                    <div class="add-box">
+                        <a href="#" class="add">
+                            <img src="img/card-add.svg" alt="">
+                            <p class="add-txt">Add to Cart</p>
+                        </a>
+                    </div>
+                </div>
+                <div class="item">
+                    <a href="#" class="item-link">
+                        <img class="item-pic" src="img/product-3.png" alt="">
+                        <div class="txt-box">
+                            <p class="txt-desc">Mango People T-shirt</p>
+                            <p class="txt-price">$52.00</p>
+                        </div>
+                    </a>
+                    <div class="add-box">
+                        <a href="#" class="add">
+                            <img src="img/card-add.svg" alt="">
+                            <p class="add-txt">Add to Cart</p>
+                        </a>
+                    </div>
+                </div>
+                <div class="item">
+                    <a href="#" class="item-link">
+                        <img class="item-pic" src="img/product-4.png" alt="">
+                        <div class="txt-box">
+                            <p class="txt-desc">Mango People T-shirt</p>
+                            <p class="txt-price">$52.00</p>
+                        </div>
+                    </a>
+                    <div class="add-box">
+                        <a href="#" class="add">
+                            <img src="img/card-add.svg" alt="">
+                            <p class="add-txt">Add to Cart</p>
+                        </a>
+                    </div>
+                </div>
+                <div class="item">
+                    <a href="#" class="item-link">
+                        <img class="item-pic" src="img/product-5.png" alt="">
+                        <div class="txt-box">
+                            <p class="txt-desc">Mango People T-shirt</p>
+                            <p class="txt-price">$52.00</p>
+                        </div>
+                    </a>
+                    <div class="add-box">
+                        <a href="#" class="add">
+                            <img src="img/card-add.svg" alt="">
+                            <p class="add-txt">Add to Cart</p>
+                        </a>
+                    </div>
+                </div>
+                <div class="item">
+                    <a href="#" class="item-link">
+                        <img class="item-pic" src="img/product-6.png" alt="">
+                        <div class="txt-box">
+                            <p class="txt-desc">Mango People T-shirt</p>
+                            <p class="txt-price">$52.00</p>
+                        </div>
+                    </a>
+                    <div class="add-box">
+                        <a href="#" class="add">
+                            <img src="img/card-add.svg" alt="">
+                            <p class="add-txt">Add to Cart</p>
+                        </a>
+                    </div>
+                </div>
+                <div class="item">
+                    <a href="#" class="item-link">
+                        <img class="item-pic" src="img/product-7.png" alt="">
+                        <div class="txt-box">
+                            <p class="txt-desc">Mango People T-shirt</p>
+                            <p class="txt-price">$52.00</p>
+                        </div>
+                    </a>
+                    <div class="add-box">
+                        <a href="#" class="add">
+                            <img src="img/card-add.svg" alt="">
+                            <p class="add-txt">Add to Cart</p>
+                        </a>
+                    </div>
+                </div>
+                <div class="item">
+                    <a href="#" class="item-link">
+                        <img class="item-pic" src="img/product-8.png" alt="">
+                        <div class="txt-box">
+                            <p class="txt-desc">Mango People T-shirt</p>
+                            <p class="txt-price">$52.00</p>
+                        </div>
+                    </a>
+                    <div class="add-box">
+                        <a href="#" class="add">
+                            <img src="img/card-add.svg" alt="">
+                            <p class="add-txt">Add to Cart</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="item-button-box">
+                <a href="#" class="item-sec-button">Browse All Product</a>
+            </div>
+        </div>
+    </section>
 </body>
 
 </html>
