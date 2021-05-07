@@ -130,6 +130,95 @@
     text-transform: uppercase;
     text-decoration: none;
 }
+.menu-item{
+    margin-right: 46px;
+}
+.menu-item:last-of-type{
+    margin-right: 0;
+}
+.mega-link{
+    display: block;
+    color: #646464;
+    font-family: Lato;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 28px;
+    text-decoration: none;
+}
+.mega-link:hover{
+    color: #f16d7f;
+}
+.mega-link-img{
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    height: 118px;
+    width: 100%;
+    background-image: url(img/super-sale.png);
+    text-decoration: none;
+}
+.last-item{
+    display: flex;
+    flex-direction: column;
+}
+.last-item-link{
+    flex-grow: 1;
+}
+.link-img-txt{
+    padding: 10px;
+    color: #ffffff;
+    font-size: 22px;
+    font-weight: 400;
+    text-transform: uppercase;
+    line-height: 28px;
+}
+.last:hover .mega-box{
+    right: 0;
+}
+.menu-list{
+    position: relative;
+}
+.menu-list:hover .mega-box{
+    display: flex;
+}
+.mega-box{
+    border-radius: 5px;
+    background-color: #ffffff;
+    border: 1px solid #e8e8e8;
+    position: absolute;
+    padding: 20px;
+    display: none;
+    top: 47px;
+}
+.mega-box::before{
+    content: "";
+    display: block;
+    width: 12px;
+    height: 12px;
+    background-color: #fff;
+    border-left: 1px solid #e8e8e8;
+    border-top: 1px solid #e8e8e8;
+    position: absolute;
+    top: -7px;
+    left: 33px;
+    transform: rotate(45deg);
+}
+.last:hover .mega-box::before{
+    top: -7;
+    right: 33px;
+    left: auto;
+}
+.item-hedding{
+    color: #232323;
+    font-family: Lato;
+    font-size: 14px;
+    font-weight: 400;
+    text-transform: uppercase;
+    border-bottom: 1px solid #e8e8e8;
+    width: 235px;
+    padding: 8px;
+    margin: 8px;
+}
 .slider{
     height: 613px;
     background-color: #e8e8e8;
